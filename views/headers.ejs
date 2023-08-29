@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>ToDo list</title>
+</head>
+<body>
+    <header class="p-3 mb-3">
+        <div class="custom-container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <img src="PNGS/calendar.png" alt="ZAzaza" width="20px" height="20px" class="image1">
+              <li><a href="http://localhost:3000/" class="nav-link px-2 link-body-emphasis somepadding">Today</a></li>
+              <img src="PNGS/suitcase.png" alt="ZAzaza" width="20px" height="20px" class="image1">
+              <li><a href="http://localhost:3000/work" class="nav-link px-2 link-body-emphasis somepadding">Work</a></li>
+            </ul>
+          </div>
+        </div>
+    </header>
+    <div class="date">
+      <%= dannie.dayofweek %>, <%= dannie.monthdate %> <%= dannie.dayofmonth %> 
+    </div> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

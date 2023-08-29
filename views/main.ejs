@@ -1,0 +1,19 @@
+<% for(let i = 0; i<divi.length; i++){ %>
+<div class="item">
+    <p>
+    <%= divi[i].name; %>
+    </p>
+    <div class="custommy">
+        <form action="/deleteformain" method="post">
+            <input type="checkbox" value="<%=divi[i]._id%>"name="id">
+            <button type="submit" name="sosite">del</button>       
+        </form>
+    </div>
+</div>
+<% } %>
+
+<form action="/" method="POST" class="item">
+    <input type="text" placeholder="New Item" class="in23" name="some">
+    <button type="submit" name="list" class="butt">+</button>
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>

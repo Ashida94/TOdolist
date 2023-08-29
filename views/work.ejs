@@ -1,0 +1,18 @@
+<%- include("headers.ejs") %>
+
+<% for(let i = 0; i<divi.length; i++){ %>
+    <div class="item">
+        <p>
+        <%= divi[i].name; %>
+        </p>
+        <form action="/deleteforwork" method="post">
+            <input type="checkbox" value="<%=divi[i]._id%>"name="id">
+            <button type="submit" name="sosite">del</button>
+        </form>
+    </div>
+    <% } %>
+    
+    <form action="/work" method="POST" class="item">
+        <input type="text" placeholder="New Item" class="in23" name="some">
+        <button type="submit" name="list" class="butt">+</button>
+    </form>
